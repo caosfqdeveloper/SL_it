@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root{
+    --principal: #dbdada;
+    --secundario: hsl(5, 55%, 77%);
+    --resaltado: #F06B00;
+    --importante: #F02500;
+    --blanco: #222121;
+    --white: #ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    /*Apply only for the nav relocate once it finnished*/
+    list-style: none;
+}
+
+/* Mobile Styles */
+
+/* Tablet Styles */

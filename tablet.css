@@ -1,0 +1,372 @@
+@media only screen and (min-width: 701px) and (max-width: 1280px) {
+    .home {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr; /* Ajuste para el header y el contenido principal */
+      }
+    
+      .nav {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px; /* Ajusta según sea necesario */
+        height: 10vh;
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1),
+          rgba(128, 128, 128, 1)
+        );
+      }
+    
+      .left-header {
+        display: flex;
+       
+        align-items: center;
+        margin-right: auto; /* Empuja el logo hacia la izquierda */
+        margin-left: 20px; /* Ajusta el margen izquierdo según sea necesario */
+        color: aliceblue;
+        font-size:clamp(1.3rem, 6vw,1.8rem);
+
+        margin-left: 2rem;
+      }
+      .left-header{
+        grid-column: 1/3;
+        grid-row: 1;
+        font-size:clamp(0.1rem ,6vw, 3rem);
+        font-weight: bold;
+       
+        margin-left: 2rem;
+        animation:flip;
+        animation-duration: 3s;
+      
+        
+      
+      }
+    
+      .nav ul {
+       display: none;
+      }
+    
+     
+    
+      .principal {
+        grid-column: 1;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        align-items: center;
+        justify-items: center;
+        height: 90vh;
+      }
+    
+      .img_ppal {
+        grid-column: 1 / 8;
+        grid-row: 1 / 8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        max-width: 100%; /* Establece el tamaño máximo igual al ancho de la ventana */
+        max-height: 80%; /* Establece el tamaño máximo igual al alto de la ventana */
+        z-index: -1;
+      }
+      
+      
+      h1{
+        grid-column: 5/8;
+        grid-row: 2/3;
+        font-size:clamp(2rem,2vw,3rem);
+        font-weight: 700;
+        color: var(--principal);
+        text-align: center;
+      }
+      h1:hover{
+        color: rgb(18, 108, 211);
+      }
+      .principal_serv {
+        grid-column: 1/ 8;
+        grid-row: 6/8;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        margin: auto 1rem;
+       
+      }
+      
+      .img_serv {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+        position: relative;
+        margin-bottom:rem;
+      }
+
+      
+      .img_serv:hover {
+        transform: scale(1.2);
+        z-index: 2;
+      }
+      
+      .servicios {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1),
+          rgba(128, 128, 128, 1)
+        );
+        
+      }
+      
+      
+      .img_servicios {
+        width: 250px;
+        height: 100px;
+        border-radius: 10%;
+       
+        
+      }
+      
+      .seguridad {
+        grid-column: 1;
+        grid-row: 1 / 2;
+        margin: auto;
+      }
+     
+      .p_seguridad{
+        grid-column: 1;
+        grid-row: 2 / 3;
+    
+      }
+      
+      .nube {
+        grid-column: 1;
+        grid-row: 3/ 4;
+        margin: auto;
+      }
+      .p_nube{
+        grid-column:1;
+        grid-row: 4/5;
+
+      }
+
+      
+      .pM {
+        grid-column: 1;
+        grid-row: 3 / 4;
+        margin: auto;
+      }
+      .p_gestion {
+        grid-column: 1;
+        grid-row: 4/ 5;
+        margin: auto;
+      }
+      
+      .desarrollo {
+        grid-column: 1;
+        grid-row: 5/ 6;
+        margin: auto;
+      }
+      
+      .p_desarrollo {
+        grid-column: 1;
+        grid-row: 6/ 7;
+      }
+      .nube {
+        grid-column: 1;
+        grid-row: 7/8;
+        margin: auto;
+      }
+      
+      .p_nube{
+        grid-column: 1;
+        grid-row: 8/ 9;
+      }
+      p{
+        font-size:clamp(0.8rem,1vw,1.4rem);
+        color: aliceblue;
+        margin: auto;
+        padding: auto;
+      }
+      p:hover{
+        color: rgb(18, 108, 211);
+      }
+    
+      .team-container {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        height: 100vh;
+        background: linear-gradient(135deg, rgba(0, 0, 51, 1) 0%, rgba(102, 153, 204, 1) 50%, rgba(204, 229, 255, 1) 100%); /* Cambiado a azul metalizado */
+    
+    
+     
+      }
+      h3{
+        grid-column: 3/10;;
+        grid-row: 2/3;
+        font-size: clamp(1.2rem,4vw, 1.8rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1),
+          rgba(128, 128, 128, 1)
+        
+        );
+        color: azure;
+    
+      }
+      .team_miembros{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    
+      }
+      .team_miembros:hover {
+        transform: rotate(10deg);
+    }
+      .team_uno{
+        grid-column: 3/5;
+        grid-row: 4/6;
+    
+      }
+      .sharon_smith{
+        grid-column: 3/4;
+        grid-row: 6/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+      
+        color: azure;
+        font-size:1rem;
+    
+      }
+      .team_dos{
+        grid-column: 7/10;
+        grid-row: 4/6;
+    
+      }
+      .eleonora_jeferson{
+        grid-column: 7/10;
+        grid-row: 6/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+        
+        color: azure;
+        font-size: 1rem;
+      }
+      .team_tres{
+        grid-column: 8/10;
+        grid-row: 9/11;
+    
+      }
+      .kristalina_georgeva{
+        grid-column: 8/10;
+        grid-row: 11/12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+       
+        color: azure;
+        font-size: 1.2rem;
+      }
+      .team_cuatro{
+        grid-column: 2/4;
+        grid-row: 9/11;
+    
+      }
+      .roberto_chamorro{
+        grid-column: 2/4;
+        grid-row: 11/12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+       
+        color: azure;
+        font-size: 1.2rem;
+      }
+     .client{
+      
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1),
+          rgba(128, 128, 128, 1)
+        
+        );
+      height: 100vh;
+    
+      
+    
+      
+    
+    
+        
+      }
+    
+    
+      .carrusel-container {
+       grid-column:1/13;
+       grid-row:6/12;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        display: flex;
+      }
+      
+      .imagen_carrusel {
+        scroll-snap-align: start;
+        flex: 0 0 auto;
+        width: calc(100% / 4);
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .titulo_clientes{
+        grid-column: 5/10;
+        grid-row: 3/4;
+        font-size: 2rem;
+        color: azure;
+      }
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+}     

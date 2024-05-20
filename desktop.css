@@ -1,0 +1,345 @@
+/* Desktop Styles */
+@media only screen and (min-width: 1281px) {
+  .home {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr; /* Ajuste para el header y el contenido principal */
+  }
+
+  .nav {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Ajusta según sea necesario */
+    height: 10vh;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(128, 128, 128, 1)
+    );
+  }
+
+  .left-header {
+    display: flex;
+   
+    align-items: center;
+    margin-right: auto; /* Empuja el logo hacia la izquierda */
+    margin-left: 20px; /* Ajusta el margen izquierdo según sea necesario */
+    color: aliceblue;
+    font-size: 2rem;
+   
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos de la lista a la derecha */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* Empuja la lista hacia la derecha */
+    margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+  }
+
+  .nav ul li {
+    margin: 0 15px; /* Espaciado entre los elementos de la lista */
+  }
+
+  .nav ul li a {
+    color: rgb(221, 238, 238); /* Ajusta esto según tu preferencia de color */
+    margin-right: 1rem;
+    font-size: 1.3rem;
+  }
+  .nav ul li a:hover {
+    color: rgb(18, 108, 211); /* Ajusta esto según tu preferencia de color */
+  }
+
+  .principal {
+    grid-column: 1;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    align-items: center;
+    justify-items: center;
+    height: 90vh;
+  }
+
+  .img_ppal {
+    grid-column: 1 / 13;
+    grid-row: 1 / 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    max-width: 100%; /* Establece el tamaño máximo igual al ancho de la ventana */
+    max-height: 80%; /* Establece el tamaño máximo igual al alto de la ventana */
+    z-index: -1;
+  }
+  h1{
+    grid-column: 7/13;
+    grid-row: 3/4;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--principal);
+    text-align: center;
+  }
+  h1:hover{
+    color: rgb(18, 108, 211);
+  }
+  .principal_serv {
+    grid-column: 1 / 13;
+    grid-row: 9 / 13;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .img_serv {
+    width: 220px;
+    height: 250px;
+    border-radius: 15%;
+    transition: transform 0.3s ease;
+    position: relative;
+    margin-bottom:rem;
+  }
+  
+  .img_serv:hover {
+    transform: scale(1.2);
+    z-index: 2;
+  }
+  
+  .servicios {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(128, 128, 128, 1)
+    );
+  }
+  
+  
+  .img_servicios {
+    width: 380px;
+    height: 200px;
+    border-radius: 10%;
+    
+  }
+  
+  .seguridad {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: auto;
+  }
+  
+  .nube {
+    grid-column: 2/ 3;
+    grid-row: 3 / 4;
+    margin: auto;
+  }
+  
+  .pM {
+    grid-column: 1/ 2;
+    grid-row: 2 / 3;
+    margin: auto;
+  }
+  
+  .desarrollo {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    margin: auto;
+  }
+  
+  .p_desarrollo {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  p{
+    font-size: 1.5rem;
+    color: aliceblue;
+    margin: auto;
+    padding: auto;
+  }
+  p:hover{
+    color: rgb(18, 108, 211);
+  }
+
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(0, 0, 51, 1) 0%, rgba(102, 153, 204, 1) 50%, rgba(204, 229, 255, 1) 100%); /* Cambiado a azul metalizado */
+
+
+ 
+  }
+  h3{
+    grid-column: 5/9;
+    grid-row: 2/3;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(128, 128, 128, 1)
+    
+    );
+    color: azure;
+
+  }
+  .team_miembros{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+  }
+  .team_miembros:hover {
+    transform: rotate(10deg);
+}
+  .team_uno{
+    grid-column: 3/5;
+    grid-row: 4/6;
+
+  }
+  .sharon_smith{
+    grid-column: 3/5;
+    grid-row: 7/8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(128, 128, 128, 1)
+    
+    );
+    color: azure;
+    font-size: 1.2rem;
+
+  }
+  .team_dos{
+    grid-column: 9/11;
+    grid-row: 4/6;
+
+  }
+  .eleonora_jeferson{
+    grid-column: 9/11;
+    grid-row: 7/8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(128, 128, 128, 1)
+    
+    );
+    color: azure;
+    font-size: 1.2rem;
+  }
+  .team_tres{
+    grid-column: 8/10;
+    grid-row: 9/11;
+
+  }
+  .kristalina_georgeva{
+    grid-column: 8/10;
+    grid-row: 12/13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(128, 128, 128, 1)
+    
+    );
+    color: azure;
+    font-size: 1.2rem;
+  }
+  .team_cuatro{
+    grid-column: 2/4;
+    grid-row: 9/11;
+
+  }
+  .roberto_chamorro{
+    grid-column: 2/4;
+    grid-row: 12/13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(128, 128, 128, 1)
+    
+    );
+    color: azure;
+    font-size: 1.2rem;
+  }
+ .client{
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(128, 128, 128, 1)
+    
+    );
+  height: 100vh;
+
+  
+
+  
+
+
+    
+  }
+
+
+  .carrusel-container {
+   grid-column:1/13;
+   grid-row:6/12;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+  }
+  
+  .imagen_carrusel {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: calc(100% / 4);
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .titulo_clientes{
+    grid-column: 5/9;
+    grid-row: 3/4;
+    font-size: 2.5rem;
+    color: azure;
+  
+
+  }
+
+}
