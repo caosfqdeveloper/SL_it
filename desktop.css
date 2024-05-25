@@ -31,6 +31,7 @@
     margin-left: 20px; /* Ajusta el margen izquierdo según sea necesario */
     color: aliceblue;
     font-size: 2rem;
+    margin-right: 1rem;
    
   }
 
@@ -341,5 +342,9 @@
   
 
   }
+  .btn_contacto{
+    display: none;
+  }
+ 
 
 }

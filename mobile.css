@@ -350,4 +350,10 @@
         font-size: 2rem;
         color: azure;
       }
+      .btn_contacto{
+        grid-column: 6;
+        grid-row: 3;
+        border-radius: 50%;
+      }
+     
 }
