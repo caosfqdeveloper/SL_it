@@ -25,14 +25,13 @@
 
   .left-header {
     display: flex;
-   
+
     align-items: center;
     margin-right: auto; /* Empuja el logo hacia la izquierda */
     margin-left: 20px; /* Ajusta el margen izquierdo según sea necesario */
     color: aliceblue;
     font-size: 2rem;
     margin-right: 1rem;
-   
   }
 
   .nav ul {
@@ -82,7 +81,7 @@
     max-height: 80%; /* Establece el tamaño máximo igual al alto de la ventana */
     z-index: -1;
   }
-  h1{
+  h1 {
     grid-column: 7/13;
     grid-row: 3/4;
     font-size: 4rem;
@@ -90,7 +89,7 @@
     color: var(--principal);
     text-align: center;
   }
-  h1:hover{
+  h1:hover {
     color: rgb(18, 108, 211);
   }
   .principal_serv {
@@ -102,21 +101,21 @@
     width: 100%;
     padding: 0 20px;
   }
-  
+
   .img_serv {
     width: 220px;
     height: 250px;
     border-radius: 15%;
     transition: transform 0.3s ease;
     position: relative;
-    margin-bottom:rem;
+    margin-bottom: rem;
   }
-  
+
   .img_serv:hover {
     transform: scale(1.2);
     z-index: 2;
   }
-  
+
   .servicios {
     height: 100vh;
     display: grid;
@@ -128,50 +127,48 @@
       rgba(128, 128, 128, 1)
     );
   }
-  
-  
+
   .img_servicios {
     width: 380px;
     height: 200px;
     border-radius: 10%;
-    
   }
-  
+
   .seguridad {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     margin: auto;
   }
-  
+
   .nube {
     grid-column: 2/ 3;
     grid-row: 3 / 4;
     margin: auto;
   }
-  
+
   .pM {
     grid-column: 1/ 2;
     grid-row: 2 / 3;
     margin: auto;
   }
-  
+
   .desarrollo {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     margin: auto;
   }
-  
+
   .p_desarrollo {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
   }
-  p{
+  p {
     font-size: 1.5rem;
     color: aliceblue;
     margin: auto;
     padding: auto;
   }
-  p:hover{
+  p:hover {
     color: rgb(18, 108, 211);
   }
 
@@ -180,12 +177,14 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     height: 100vh;
-    background: linear-gradient(135deg, rgba(0, 0, 51, 1) 0%, rgba(102, 153, 204, 1) 50%, rgba(204, 229, 255, 1) 100%); /* Cambiado a azul metalizado */
-
-
- 
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 51, 1) 0%,
+      rgba(102, 153, 204, 1) 50%,
+      rgba(204, 229, 255, 1) 100%
+    ); /* Cambiado a azul metalizado */
   }
-  h3{
+  h3 {
     grid-column: 5/9;
     grid-row: 2/3;
     font-size: 2.5rem;
@@ -197,26 +196,22 @@
       to right,
       rgba(0, 0, 0, 1),
       rgba(128, 128, 128, 1)
-    
     );
     color: azure;
-
   }
-  .team_miembros{
+  .team_miembros {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-
   }
   .team_miembros:hover {
     transform: rotate(10deg);
-}
-  .team_uno{
+  }
+  .team_uno {
     grid-column: 3/5;
     grid-row: 4/6;
-
   }
-  .sharon_smith{
+  .sharon_smith {
     grid-column: 3/5;
     grid-row: 7/8;
     display: flex;
@@ -227,18 +222,15 @@
       to right,
       rgba(0, 0, 0, 1),
       rgba(128, 128, 128, 1)
-    
     );
     color: azure;
     font-size: 1.2rem;
-
   }
-  .team_dos{
+  .team_dos {
     grid-column: 9/11;
     grid-row: 4/6;
-
   }
-  .eleonora_jeferson{
+  .eleonora_jeferson {
     grid-column: 9/11;
     grid-row: 7/8;
     display: flex;
@@ -249,17 +241,15 @@
       to right,
       rgba(0, 0, 0, 1),
       rgba(128, 128, 128, 1)
-    
     );
     color: azure;
     font-size: 1.2rem;
   }
-  .team_tres{
+  .team_tres {
     grid-column: 8/10;
     grid-row: 9/11;
-
   }
-  .kristalina_georgeva{
+  .kristalina_georgeva {
     grid-column: 8/10;
     grid-row: 12/13;
     display: flex;
@@ -270,17 +260,15 @@
       to right,
       rgba(0, 0, 0, 1),
       rgba(128, 128, 128, 1)
-    
     );
     color: azure;
     font-size: 1.2rem;
   }
-  .team_cuatro{
+  .team_cuatro {
     grid-column: 2/4;
     grid-row: 9/11;
-
   }
-  .roberto_chamorro{
+  .roberto_chamorro {
     grid-column: 2/4;
     grid-row: 12/13;
     display: flex;
@@ -291,41 +279,30 @@
       to right,
       rgba(0, 0, 0, 1),
       rgba(128, 128, 128, 1)
-    
     );
     color: azure;
     font-size: 1.2rem;
   }
- .client{
-  
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  background: linear-gradient(
+  .client {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background: linear-gradient(
       to right,
       rgba(0, 0, 0, 1),
       rgba(128, 128, 128, 1)
-    
     );
-  height: 100vh;
-
-  
-
-  
-
-
-    
+    height: 100vh;
   }
-
 
   .carrusel-container {
-   grid-column:1/13;
-   grid-row:6/12;
+    grid-column: 1/13;
+    grid-row: 6/12;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     display: flex;
   }
-  
+
   .imagen_carrusel {
     scroll-snap-align: start;
     flex: 0 0 auto;
@@ -334,17 +311,13 @@
     justify-content: center;
     align-items: center;
   }
-  .titulo_clientes{
+  .titulo_clientes {
     grid-column: 5/9;
     grid-row: 3/4;
     font-size: 2.5rem;
     color: azure;
-  
-
   }
-  .btn_contacto{
+  .btn_contacto {
     display: none;
   }
- 
-
 }
